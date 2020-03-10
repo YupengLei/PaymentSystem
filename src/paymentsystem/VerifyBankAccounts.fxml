@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentsystem.VerifyBankAccountsController">
+   <children>
+      <TextField fx:id="txtPBAID" layoutX="39.0" layoutY="170.0" promptText="bank id" />
+      <TextField fx:id="txtPBANumber" layoutX="39.0" layoutY="219.0" promptText="bank no" />
+      <Button layoutX="43.0" layoutY="421.0" mnemonicParsing="false" onAction="#LinkAdditionalAccount" prefHeight="27.0" prefWidth="54.0" text="Link" />
+      <TableView fx:id="tblPBAData" layoutX="220.0" layoutY="170.0" prefHeight="80.0" prefWidth="468.0">
+        <columns>
+          <TableColumn fx:id="colBankID" prefWidth="136.0" text="bank Id" />
+          <TableColumn fx:id="colBANumber" prefWidth="176.0" text="bank no" />
+            <TableColumn fx:id="colPBAVerified" prefWidth="155.0" text="PBAVerified" />
+        </columns>
+      </TableView>
+      <Button layoutX="39.0" layoutY="515.0" mnemonicParsing="false" onAction="#VerifyAdditionalAccount" prefHeight="27.0" prefWidth="160.0" text="verify" />
+      <Button layoutX="147.0" layoutY="421.0" mnemonicParsing="false" onAction="#UnlinkAdditionalAccount" text="unlink" />
+      <TableView fx:id="tblABAData" layoutX="220.0" layoutY="339.0" prefHeight="258.0" prefWidth="468.0">
+         <columns>
+            <TableColumn fx:id="colABAID" prefWidth="136.0" text="bank Id" />
+            <TableColumn fx:id="colABANumber" prefWidth="174.0" text="bank no" />
+            <TableColumn fx:id="colABAVerified" prefWidth="157.0" text="verified" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtBankID" layoutX="39.0" layoutY="339.0" promptText="bank ID" />
+      <TextField fx:id="txtBANumber" layoutX="39.0" layoutY="382.0" prefHeight="27.0" prefWidth="167.0" promptText="bank no" />
+      <Button layoutX="39.0" layoutY="275.0" mnemonicParsing="false" onAction="#LinkPrimaryAccount" prefHeight="27.0" prefWidth="52.0" text="Link" />
+      <Button layoutX="550.0" layoutY="275.0" mnemonicParsing="false" onAction="#VerifyPrimaryAccount" text="verify" />
+      <Button layoutX="133.0" layoutY="275.0" mnemonicParsing="false" onAction="#UnlinkPrimaryAccount" text="unlink" />
+      <Button layoutX="220.0" layoutY="275.0" mnemonicParsing="false" onAction="#LoadPrimaryAccount" text="load info" />
+      <Button layoutX="39.0" layoutY="560.0" mnemonicParsing="false" onAction="#LoadAdditionalAccount" prefHeight="36.0" prefWidth="160.0" text="load info" />
+      <TextField fx:id="txtverifyAmountPBA" layoutX="347.0" layoutY="275.0" prefHeight="27.0" prefWidth="175.0" promptText="deposit amount to verify" />
+      <TextField fx:id="txtverifyAmountABA" layoutX="39.0" layoutY="471.0" prefHeight="27.0" prefWidth="160.0" promptText="deposit to verify" />
+      <Label fx:id="PBAconf" layoutX="330.0" layoutY="246.0" prefHeight="17.0" prefWidth="175.0" />
+      <Label fx:id="ABAconf" layoutX="43.0" layoutY="584.0" prefHeight="17.0" prefWidth="220.0" />
+      <Pane prefHeight="100.0" prefWidth="715.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="welcome" layoutX="40.0" layoutY="36.0" text="welcome" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="36.0" text="This is your bank account info" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="39.0" layoutY="128.0" text="Primary Bank Account:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="308.0" text="Additional Bank Account:" />
+   </children>
+</AnchorPane>

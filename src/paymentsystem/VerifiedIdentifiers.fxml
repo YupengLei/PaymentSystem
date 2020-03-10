@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentsystem.VerifiedIdentifiersController">
+   <children>
+      <TextField fx:id="codeEmail" layoutX="85.0" layoutY="342.0" prefHeight="27.0" prefWidth="193.0" promptText="enter code to verify email" />
+      <TextField fx:id="codePhone" layoutX="85.0" layoutY="403.0" prefHeight="27.0" prefWidth="193.0" promptText="enter code to verify phone" />
+      <Button fx:id="btnConfirmEmail" layoutX="414.0" layoutY="342.0" mnemonicParsing="false" onAction="#VerifyEmail" prefHeight="27.0" prefWidth="98.0" text="verify email" />
+      <Button fx:id="btnConfirmPhone" layoutX="411.0" layoutY="403.0" mnemonicParsing="false" onAction="#VerifyPhone" text="verify phone " />
+      <Label fx:id="msg" alignment="CENTER" layoutY="574.0" prefHeight="40.0" prefWidth="793.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lblEmail" layoutX="426.0" layoutY="325.0" />
+      <Label layoutX="426.0" layoutY="381.0" prefHeight="17.0" prefWidth="52.0" />
+      <TableView fx:id="tblIDData" layoutX="88.0" layoutY="107.0" prefHeight="200.0" prefWidth="427.0">
+        <columns>
+          <TableColumn fx:id="colIdentifier" prefWidth="216.0" text="Identifier" />
+          <TableColumn fx:id="colType" prefWidth="106.0" text="Type" />
+            <TableColumn fx:id="colVerified" prefWidth="104.0" text="Verified" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtEmail" layoutX="88.0" layoutY="471.0" prefHeight="27.0" prefWidth="187.0" promptText="enter email " />
+      <TextField fx:id="txtPhone" layoutX="88.0" layoutY="540.0" prefHeight="27.0" prefWidth="187.0" promptText="enter phone no" />
+      <Button layoutX="409.0" layoutY="471.0" mnemonicParsing="false" onAction="#addEmail" prefHeight="27.0" prefWidth="98.0" text="add email" />
+      <Button layoutX="412.0" layoutY="540.0" mnemonicParsing="false" onAction="#addPhone" prefHeight="27.0" prefWidth="98.0" text="add phone" />
+      <Button layoutX="596.0" layoutY="127.0" mnemonicParsing="false" onAction="#LoadIdentifierData" prefHeight="80.0" prefWidth="98.0" text="load info" />
+      <Pane layoutX="-2.0" prefHeight="100.0" prefWidth="795.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="welcome" layoutX="40.0" layoutY="36.0" text="welcome" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="36.0" text="This is your email/phone info" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

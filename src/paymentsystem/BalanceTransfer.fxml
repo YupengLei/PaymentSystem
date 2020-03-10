@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentsystem.BalancePageController">
+   <children>
+      <TextField fx:id="receiverid" layoutX="238.0" layoutY="206.0" prefHeight="27.0" prefWidth="215.0" promptText="Recipient email/phone" />
+      <TextField fx:id="trnasamount" layoutX="238.0" layoutY="269.0" prefHeight="27.0" prefWidth="215.0" promptText="Send Amount" />
+      <Button layoutX="473.0" layoutY="542.0" mnemonicParsing="false" onAction="#TransferMoney" prefHeight="80.0" prefWidth="94.0" text="Send" />
+      <Label fx:id="transferconf" alignment="CENTER" layoutY="491.0" prefHeight="36.0" prefWidth="610.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <PasswordField fx:id="retypepass" layoutX="238.0" layoutY="325.0" prefHeight="27.0" prefWidth="215.0" promptText="Password" />
+      <TextField fx:id="memo" alignment="TOP_LEFT" layoutX="238.0" layoutY="385.0" prefHeight="100.0" prefWidth="215.0" promptText="memo" />
+      <Pane prefHeight="100.0" prefWidth="610.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="welcome" layoutX="40.0" layoutY="36.0" text="welcome" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="36.0" text="You can send money here" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="95.0" layoutY="211.0" text="Recipient ID:" />
+      <Label layoutX="108.0" layoutY="274.0" text="Amount:" />
+      <Label layoutX="102.0" layoutY="330.0" text="Password:" />
+      <Label layoutX="113.0" layoutY="422.0" prefHeight="27.0" prefWidth="42.0" text="Memo:" />
+   </children>
+</AnchorPane>

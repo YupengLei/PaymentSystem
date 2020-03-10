@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentsystem.BalancePageController">
+   <children>
+      <TextField fx:id="requestamount" alignment="CENTER" layoutX="60.0" layoutY="187.0" prefHeight="59.0" prefWidth="167.0" promptText="Amount" />
+      <Button layoutX="430.0" layoutY="531.0" mnemonicParsing="false" onAction="#RequestMoney" prefHeight="80.0" prefWidth="116.0" text="request confirm" />
+      <Label fx:id="requestconf" alignment="CENTER" layoutY="100.0" prefHeight="50.0" prefWidth="610.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="memoRequest" alignment="CENTER" layoutX="289.0" layoutY="187.0" prefHeight="59.0" prefWidth="267.0" promptText="memo" />
+      <TextField fx:id="requestee1" layoutX="60.0" layoutY="265.0" promptText="requestee 1 (requied)" />
+      <TextField fx:id="percentage1" layoutX="289.0" layoutY="265.0" prefHeight="27.0" prefWidth="267.0" promptText="percentage 1" />
+      <TextField fx:id="requestee2" layoutX="60.0" layoutY="354.0" promptText="requestee 2 (optional)" />
+      <TextField fx:id="percentage2" layoutX="289.0" layoutY="354.0" prefHeight="27.0" prefWidth="267.0" promptText="percentage 2" />
+      <TextField fx:id="requestee3" layoutX="60.0" layoutY="441.0" promptText="requestee 3 (optional)" />
+      <TextField fx:id="percentage3" layoutX="289.0" layoutY="441.0" prefHeight="27.0" prefWidth="267.0" promptText="percentage 3" />
+      <Button layoutX="264.0" layoutY="531.0" mnemonicParsing="false" onAction="#splitBills" prefHeight="80.0" prefWidth="116.0" text="split bills" />
+      <Pane prefHeight="100.0" prefWidth="610.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="welcome" layoutX="40.0" layoutY="36.0" text="welcome" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="36.0" text="You can request money here" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

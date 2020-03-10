@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentsystem.RequestTransactionController">
+    <children>
+        <TableView fx:id="requesttransaction" layoutX="15.0" layoutY="125.0" prefHeight="200.0" prefWidth="800.0">
+            <columns>
+                <TableColumn fx:id="rRTid" prefWidth="53.0" text="RTid" />
+                <TableColumn fx:id="rAmount" prefWidth="72.0" text="Amount" />
+                <TableColumn fx:id="rTime" prefWidth="168.0" text="Date/Time" />
+                <TableColumn fx:id="rStatus" prefWidth="73.0" text="Status" />
+                <TableColumn fx:id="rName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="rPercentage" prefWidth="89.0" text="Percentage" />
+                <TableColumn fx:id="rMemo" prefWidth="284.0" text="Memo" />
+            </columns>
+        </TableView>
+      <Button layoutX="597.0" layoutY="430.0" mnemonicParsing="false" onAction="#rejectRequest" prefHeight="130.0" prefWidth="134.0" text="Reject this request" />
+      <Pane prefHeight="100.0" prefWidth="830.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="welcome" layoutX="40.0" layoutY="36.0" text="welcome" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="36.0" text="You can accept or reject requests here" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+          <Button fx:id="loadRequestInfo" layoutX="119.0" layoutY="430.0" mnemonicParsing="false" onAction="#LoadRequest" prefHeight="130.0" prefWidth="134.0" text="load info" />
+      <Button layoutX="348.0" layoutY="430.0" mnemonicParsing="false" onAction="#acceptRequest" prefHeight="130.0" prefWidth="134.0" text="Accpet this request" />
+      <Label fx:id="msg" alignment="CENTER" layoutX="-1.0" layoutY="334.0" prefHeight="40.0" prefWidth="830.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentsystem.SignupController">
+    <children>
+        <Pane prefHeight="100.0" prefWidth="650.0" style="-fx-background-color: #000000;">
+            <children>
+                <Label layoutX="284.0" layoutY="34.0" text="Sign Up" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Separator layoutX="2.0" layoutY="505.0" prefHeight="14.0" prefWidth="639.0" />
+        <Button layoutX="161.0" layoutY="567.0" mnemonicParsing="false" onAction="#SignupConfirm" prefHeight="50.0" prefWidth="306.0" style="-fx-border-color: #000000;" text="Confirm" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="183.0" />
+        <TextField fx:id="txtSsn" alignment="CENTER" layoutX="161.0" layoutY="180.0" prefHeight="50.0" prefWidth="306.0" promptText="SSN" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="183.0" />
+      <Label fx:id="lblErrors" alignment="CENTER" layoutY="512.0" prefHeight="37.0" prefWidth="653.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtName" alignment="CENTER" layoutX="161.0" layoutY="280.0" prefHeight="50.0" prefWidth="306.0" promptText="Name" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="183.0" />
+      <TextField fx:id="txtPhone" alignment="CENTER" layoutX="161.0" layoutY="325.0" prefHeight="50.0" prefWidth="306.0" promptText="Phone" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="183.0" />
+      <TextField fx:id="txtEmail" alignment="CENTER" layoutX="161.0" layoutY="375.0" prefHeight="50.0" prefWidth="306.0" promptText="Email" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="183.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="177.0" prefHeight="50.0" prefWidth="105.0" text="SSN:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="230.0" prefHeight="50.0" prefWidth="105.0" text="Password:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="280.0" prefHeight="50.0" prefWidth="105.0" text="Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="325.0" prefHeight="50.0" prefWidth="105.0" text="Phone No:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="375.0" prefHeight="50.0" prefWidth="105.0" text="Email:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="183.0" layoutY="230.0" prefHeight="50.0" prefWidth="284.0" promptText="Password" />
+    </children>
+</AnchorPane>

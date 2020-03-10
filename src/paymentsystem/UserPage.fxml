@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentsystem.UserPageController">
+    <children>
+        <Pane layoutX="-49.0" prefHeight="100.0" prefWidth="610.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Label layoutX="207.0" layoutY="33.0" text="You have logged in. " textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            <Label fx:id="welcome" layoutX="42.0" layoutY="34.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Button layoutX="535.0" layoutY="21.0" mnemonicParsing="false" onAction="#Logout" style="-fx-border-color: #000000;" text="Logout" />
+            </children>
+        </Pane>
+      <Button layoutX="258.0" layoutY="159.0" mnemonicParsing="false" onAction="#CheckBalance" prefHeight="80.0" prefWidth="95.0" text="Balance" />
+      <Button layoutX="258.0" layoutY="281.0" mnemonicParsing="false" onAction="#Withdraw" prefHeight="80.0" prefWidth="95.0" text="Withdraw" />
+      <Button layoutX="61.0" layoutY="281.0" mnemonicParsing="false" onAction="#DepositMoney" prefHeight="80.0" prefWidth="95.0" text="Deposit" />
+      <Button layoutX="61.0" layoutY="401.0" mnemonicParsing="false" onAction="#BalanceTransfer" prefHeight="80.0" prefWidth="95.0" text="Send" />
+      <Button layoutX="60.0" layoutY="159.0" mnemonicParsing="false" onAction="#AccountInfo" prefHeight="80.0" prefWidth="95.0" text="Account" AnchorPane.bottomAnchor="411.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="453.0" AnchorPane.topAnchor="159.0" />
+      <Button alignment="CENTER" layoutX="426.0" layoutY="119.0" mnemonicParsing="false" onAction="#ChangePassword" prefHeight="80.0" prefWidth="95.0" text="Change&#10;Password" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="160.0" />
+      <Button layoutX="61.0" layoutY="510.0" mnemonicParsing="false" onAction="#SendTransaction" prefHeight="80.0" prefWidth="95.0" text="Cancel&#10;Send" AnchorPane.bottomAnchor="60.0" />
+      <Button layoutX="258.0" layoutY="401.0" mnemonicParsing="false" onAction="#RequestMoney" prefHeight="80.0" prefWidth="95.0" text="Request" />
+      <Button layoutX="258.0" layoutY="504.0" mnemonicParsing="false" onAction="#RequestTransaction" prefHeight="80.0" prefWidth="95.0" text="Accept&#10;Reject&#10;Request" AnchorPane.bottomAnchor="60.0" />
+      <Button layoutX="455.0" layoutY="401.0" mnemonicParsing="false" onAction="#VerifiedIdentifiers" prefHeight="80.0" prefWidth="95.0" text="Email&#10;Phone" />
+      <Button layoutX="455.0" layoutY="281.0" mnemonicParsing="false" onAction="#VerifyBankAccounts" prefHeight="80.0" prefWidth="95.0" text="Bank &#10;Accounts" />
+      <Button layoutX="455.0" layoutY="504.0" mnemonicParsing="false" onAction="#PaymentHistory" prefHeight="80.0" prefWidth="95.0" text="History" AnchorPane.bottomAnchor="60.0" />
+    </children>
+</AnchorPane>

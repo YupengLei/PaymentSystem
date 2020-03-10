@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paymentsystem.BalancePageController">
+   <children>
+      <TextField fx:id="depositamount" alignment="CENTER" layoutX="145.0" layoutY="238.0" prefHeight="80.0" prefWidth="167.0">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Button layoutX="375.0" layoutY="238.0" mnemonicParsing="false" onAction="#Deposit" prefHeight="80.0" prefWidth="94.0" text="deposit" />
+      <Label fx:id="dipositconf" alignment="CENTER" layoutX="-1.0" layoutY="325.0" prefHeight="46.0" prefWidth="610.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Pane prefHeight="100.0" prefWidth="610.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="welcome" layoutX="40.0" layoutY="36.0" text="welcome" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="36.0" text="You can  deposit here" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
